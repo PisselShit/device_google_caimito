@@ -141,3 +141,5 @@ PRODUCT_SOONG_NAMESPACES += \
 # VINTF
 DEVICE_PRODUCT_COMPATIBILITY_MATRIX_FILE += \
     $(DEVICE_PATH)/vintf/device_framework_matrix_product.xml
+
+PRODUCT_PACKAGES += fir-proximity-feature.xml
