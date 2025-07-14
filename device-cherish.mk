@@ -4,7 +4,20 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PACKAGE_OVERLAYS += $(DEVICE_PATH)/overlay-lineage
+DEVICE_PACKAGE_OVERLAYS += $(DEVICE_PATH)/overlay-cherish
+
+# Always use scudo for memory allocator
+PRODUCT_USE_SCUDO := true
+
+# Camera
+include vendor/google/camera/config.mk
+
+# Googles Face Unlock
+#include vendor/google/faceunlock/config.mk
+
+# Maintainer Info
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.cherish.maintainer=Pyrtle93
 
 # ANGLE - Almost Native Graphics Layer Engine
 PRODUCT_PACKAGES += \
@@ -23,7 +36,7 @@ PRODUCT_PACKAGES += \
     Iwlan
 
 # PowerShare
-include hardware/google/pixel/powershare/device.mk
+#include hardware/google/pixel/powershare/device.mk
 
 # Satellite
 PRODUCT_COPY_FILES += \
