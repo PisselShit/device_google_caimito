@@ -8,6 +8,12 @@
 TARGET_DISABLE_EPPE := true
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# Mist Flags
+WITH_GMS := true
+MISTOS_MAINTAINER=Pyrtle93
+TARGET_HAS_UDFPS := true
+TARGET_SUPPORTS_QUICK_TAP := true
+
 # Inherit device configuration
 DEVICE_CODENAME := komodo
 DEVICE_PATH := device/google/caimito
@@ -22,6 +28,7 @@ PRODUCT_MODEL := Pixel 9 Pro XL
 PRODUCT_NAME := lineage_$(DEVICE_CODENAME)
 
 # Boot animation
+TARGET_BOOT_ANIMATION_RES := 1440
 TARGET_SCREEN_HEIGHT := 2992
 TARGET_SCREEN_WIDTH := 1344
 

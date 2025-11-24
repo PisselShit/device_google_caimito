@@ -6,6 +6,9 @@
 
 DEVICE_PACKAGE_OVERLAYS += $(DEVICE_PATH)/overlay-lineage
 
+# Always use scudo for memory allocator
+PRODUCT_USE_SCUDO := true
+
 # ANGLE - Almost Native Graphics Layer Engine
 PRODUCT_PACKAGES += \
     ANGLE

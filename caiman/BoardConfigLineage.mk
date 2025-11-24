@@ -7,3 +7,6 @@
 include $(DEVICE_PATH)/BoardConfigLineage.mk
 
 include $(VENDOR_PATH)/BoardConfigVendor.mk
+
+# Props
+TARGET_SYSTEM_PROP :=  device/google/caimito/caiman/system.prop
