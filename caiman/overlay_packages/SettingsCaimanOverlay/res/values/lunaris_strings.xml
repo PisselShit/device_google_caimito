@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright 2021 The Android Open Source Project
+<!--
+     Copyright (C) 2018 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
      You may obtain a copy of the License at
 
-     http://www.apache.org/licenses/LICENSE-2.0
+          http://www.apache.org/licenses/LICENSE-2.0
 
      Unless required by applicable law or agreed to in writing, software
      distributed under the License is distributed on an "AS IS" BASIS,
@@ -14,10 +15,9 @@
      limitations under the License.
 -->
 
-<resources>
-    <!-- Whether to show Smooth Display feature in Settings Options -->
-    <bool name="config_show_smooth_display">true</bool>
-
-    <!-- Show Now Playing -->
-    <bool name="config_show_now_playing">true</bool>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="lunaris_device_message">Google Pixel 9 Pro</string>
+    <string name="lunaris_processor_code_message">Google Tensor G4</string>
+    <string name="lunaris_battery_type_message">4700 mAh</string>
+    <string name="lunaris_screen_message">6.3" LTPO OLED 120hz</string>
 </resources>

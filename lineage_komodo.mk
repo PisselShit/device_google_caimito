@@ -13,6 +13,18 @@ DEVICE_PATH := device/google/caimito
 VENDOR_PATH := vendor/google/komodo
 $(call inherit-product, $(DEVICE_PATH)/aosp_$(DEVICE_CODENAME).mk)
 
+# Lunaris Flags
+WITH_GMS := true
+LUNARIS_BUILD_TYPE := OFFICIAL
+TARGET_OPTIMIZED_DEXOPT := true
+TARGET_CUSTOM_UDFPS := true
+TARGET_PIXEL_BOOT_ANIMATION_RES := 1080
+TARGET_SUPPORTED_REFRESH_RATES := 120
+TARGET_SUPPORTS_GFU := true
+PRODUCT_NO_CAMERA := true
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_EXCLUDES_AUDIOFX := true
+
 # Device identifier. This must come after all inclusions
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 9 Pro XL
